@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.vscode/
+logs/
+models/*.joblib
+models/*.pkl
+*.sqlite3
+.DS_Store
+node_modules/
+coverage/

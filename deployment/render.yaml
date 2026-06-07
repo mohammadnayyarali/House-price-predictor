@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: house-price-prediction-api
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: "pip install --no-cache-dir -r requirements.txt && python model_training/train.py"
+    startCommand: "uvicorn backend.app:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: MODEL_PATH
+        value: "models/house_price_model.joblib"
+      - key: AUTO_TRAIN_ON_MISSING
+        value: "true"
