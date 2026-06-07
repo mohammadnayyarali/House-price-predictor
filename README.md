@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # House Price Prediction System
 
 A production-grade end-to-end system for predicting house prices using a machine learning model, serving predictions through a REST API, and presenting a clean frontend web experience.
@@ -48,3 +49,7 @@ A production-grade end-to-end system for predicting house prices using a machine
 - The backend is now configured to load models dynamically from `config/settings.py`, with safe fallback handling if the trained artifact is missing.
 - The deployment manifest trains the model during build so production does not depend on a pre-existing model file.
 - Optionally run EDA with `python -c "from model_training.train import main; main(run_eda=True)"` to generate correlation and pair plots in `logs/`.
+=======
+# Hoouse-price-predictor
+End-to-end ML + Web App for house price prediction
+>>>>>>> cca049b7b2b696176df183a319a1bbdd09039d09
